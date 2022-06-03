@@ -109,7 +109,7 @@ CMD <command that is executed on `docker container run`>
 列出所有容器`docker container ls -a`
 如果没有`-a`标志，它只会打印正在运行的容器。
 
-没有运行的容器就是垃圾容器，如果您有数百个已停止的容器，并且希望将它们全部删除，则应使用`docker container prune`。
+**没有运行的容器就是垃圾容器，如果您有数百个已停止的容器，并且希望将它们全部删除，则应使用**`docker container prune`。
 
 # Docker CLI 基础知识
 使用命令行与“Docker 引擎”进行交互，该引擎由 3 部分组成：CLI、REST API 和 Docker 守护程序。
@@ -130,7 +130,7 @@ docker container ls -a | grep hello-world
 
 使用 ID 的简写不会删除多个容器，因此，如果有两个以 3d 开头的 ID，则会打印警告，并且不会删除任何一个 ID。
 
-如果您有数百个已停止的容器，并且希望将它们全部删除，则应使用`docker container prune`。
+**如果您有数百个已停止的容器，并且希望将它们全部删除**，则应使用`docker container prune`。
 
 prune还可用于删除带有`docker image prune`的“悬垂”image。
 悬空image是没有名称且未使用的image。它们可以手动创建，并在构建期间自动生成。删除它们只会节省一些空间。
